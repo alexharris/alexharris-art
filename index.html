@@ -6,96 +6,91 @@
     <meta charset="utf-8">
     <meta name="viewport" content="user-scalable=no, width=device-width" />
     <title>Alex Harris Art</title>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>    
+    <script type="text/javascript" src="js/main.js"></script>    
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
     <!-- Fathom -->
     <script src="https://cdn.usefathom.com/script.js" data-site="DDUYXUPA" defer></script>
     <!-- / Fathom -->
-    <style>
 
-      body {
-        font-size: 18px;
-        background-color: floralwhite;
-        font-family: 'Times New Roman', Times, serif
-      }
-
-      span {
-        width: 95%;
-        max-width: 800px;
-        margin: 40px auto;
-        display: block;
-        
-      }
-      img {
-        max-width: 100%;
-        width: 400px;
-      }
-      .button {
-        background-color: whitesmoke;
-        font-size: 14px;
-        padding: 4px 10px;
-      }
-      label {
-        padding-right: 10px;
-      }
-      p {
-        line-height: 2em;
-      }
-      hr {
-        margin: 2em auto;
-        border: none;
-        border-top: 1px solid gainsboro;
-      }
-      form {
-        border:4px double goldenrod;
-        padding:1em;
-      }
-
-      h1 {
-        text-align: center;
-      }
-
-
-      @media screen and (min-width: 800px) {
-        .col {
-        display: flex;
-        flex-direction: row;
-        gap: 2em;
-      }
-
-      .col > div {
-        width: 50%;
-      }
-}      
-
-
-
-    </style>
   </head>
   <body>
     <span>
+    
+
       <h1>Alex Harris Art Website</h1>
-      <p><center>Hello and welcome to my website.</center></p>
+      <p><center>Hello and welcome to my website. I am a painter and programmer in Oakland, California.</center></p>
+
       <hr />
       <div class="col">
         <div>
-          <img src="cover.jpg" />
+          <div><img src="images/cover.jpg" /></div>
+          
+
         </div>
       
-      <div>
-        <h2>Birds of Lake Merritt</h2>
-        <p>My book <a hhref="https://birdsoflakemerritt.com">Birds of Lake Merritt</a> is now for sale. </p><p>Visit <a href="https://birdsoflakemerritt.com">https://birdsoflakemerritt.com</a> for details about the book, and information on ordering.</a></p>
-      </div>
-      
-      </div>
-      <hr />  
-      <p>I also have a mailing list if you would like to be informed of future endeavors.</p>
-      <form class="col" action="https://tinyletter.com/alexharris" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/alexharris', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-       <label for="tlemail">Email Address:</label><input type="text" name="email" id="tlemail" />
         <div>
-          <input type="hidden" value="1" name="embed"/>
-          <input class="button" type="submit" value="Subscribe" />
+          <h2>Birds of Lake Merritt</h2>
+          <p>My book <a href="https://birdsoflakemerritt.com">Birds of Lake Merritt</a> is now for sale. It is about the birds at Lake Merritt, the nation's first wildlife refuge.</p><p>Visit <a href="https://birdsoflakemerritt.com">https://birdsoflakemerritt.com</a> for details about the book, and information on ordering.</a></p>
         </div>
-      </form>
-      <p>You can contact me at hello@alexharris.online</p>
+        
+      </div>
+      <hr />
+      <h3>Paintings</h3>
+      <p>Here are some paintings I've done.</p>
+      <div class="painting-slider">
+          
+        <div><img src="images/bcnh2.jpg" /> Black Crowned Night Heron</div>
+        <div><img src="images/green-heron.jpg" /> Green Heron</div>
+        <div><img src="images/glaucous.jpg" /> Glaucous-winged Gull</div>
+        <div><img src="images/whitepelican.jpg" /> American White Pelican</div>
+        <div><img src="images/coopers-hawk.jpg" /> Cooper's Hawk</div>
+        <div><img src="images/eucalyptus.jpg" /> Eucalyptus Branch</div>
+        <div><img src="images/paintbrush.jpg" /> Paintbrush Flower</div>
+        <div><img src="images/pleated-gentian.jpg" />Pleated Gentian</div>
+        <div><img src="images/landscape1.jpg" /> Lake Merritt</div>
+        <div><img src="images/landscape2.jpg" />Lake Merritt</div>
+        <div><img src="images/bcnh.jpg" />Black Crowned Night Heron</div>
+      </div>        
+      <hr />  
+      <div class="col">
+        <div>
+          <div style="text-align: center; padding-top: 40px;"><img src="images/coat.gif" /></div>
+
+        </div>
+        <div>
+          <h3>Mailing List</h3>
+          <p>I also have a mailing list if you would like to be informed of future endeavors.</p>
+          <form action="https://tinyletter.com/alexharris" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/alexharris', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+           <label for="tlemail">Email Address:</label><br />
+           <input type="text" name="email" id="tlemail" />
+            <div>
+              <input type="hidden" value="1" name="embed"/>
+              <input class="button" type="submit" value="Subscribe" />
+            </div>
+          </form>
+          <h3>Get in touch</h3>
+          <p>You can contact me via email at hello at alexharris.online or find me on instagram at <a href="https://www.instagram.com/waggledance/">@waggledance</a></p>
+        </div>      
+      </div>
+      <div class="col">
+        <div>
+          <div><img width="200" src="images/poppy.jpg" /></div>
+          
+
+        </div>
+      
+        <div>
+          <div><img width="200" style="float:right;" src="images/eucalyptus.jpg" /></div>
+
+        </div>
+        
+      </div>  
+
     </span>
   </body>
 </html>
