@@ -70,7 +70,7 @@ body {
     row-gap: 40px;
   }
 
-  .art-grid div {
+  .art-grid > div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
